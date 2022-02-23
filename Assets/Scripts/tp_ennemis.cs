@@ -10,7 +10,7 @@ public class tp_ennemis : MonoBehaviour
     {   //On met les ennemis dans le tableau
         toutEnnemi [0] = GameObject.FindGameObjectWithTag ("Cube") ;
         toutEnnemi [1] = GameObject.FindGameObjectWithTag ("GreenQuad") ;
-        toutEnnemi [2] = GameObject.FindGameObjectWithTag ("Explosion") ;
+        toutEnnemi [2] = GameObject.FindGameObjectWithTag ("BlueQuad") ;
         Chiina = GameObject.FindGameObjectWithTag ("Chiina") ;
     }
     // Update is called once per frame
@@ -22,7 +22,7 @@ public class tp_ennemis : MonoBehaviour
     }
     IEnumerator waiter (GameObject ennemiCourant)
     {   //On gère la position aléatoire du respawn
-        ennemiCourant.transform.position = new Vector3 (Random.Range (-13.9f , 13.9f) , Random.Range (-13.9f , 13.9f) , 1f) ;
+        ennemiCourant.transform.position = new Vector3 (Random.Range (-13.9f , 13.9f) , 1f, Random.Range(-13.9f, 13.9f)) ;
         //On gère la taille aléatoire attribué lors du respawn
         Vector3 ennemiScale = Chiina.transform.localScale ;
         float scaleRand = Random.Range(0.75f, 2f);

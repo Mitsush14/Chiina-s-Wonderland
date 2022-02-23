@@ -20,7 +20,7 @@ public class grandir : MonoBehaviour
             collision.gameObject.SetActive (false) ;
             if (this.tag == "Chiina"){
                 compteur ++ ;
-                uiChiina.changeChiinaScale(objectScale.x + (CubeScale.x / 2) + 0.25f);
+                uiChiina.changeChiinaScale(objectScale.x + (CubeScale.x / 2));
             }
         }
     }

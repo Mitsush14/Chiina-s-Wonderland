@@ -16,7 +16,7 @@ public class uiChiina : MonoBehaviour
     public void Start()
     {
         Chiina = GameObject.FindGameObjectWithTag("Chiina");
-        ChiinaScale = 0.25f;
+        ChiinaScale = 1.0f;
     }
 
     // Update is called once per frame
@@ -27,6 +27,6 @@ public class uiChiina : MonoBehaviour
     }
 
     public static void changeChiinaScale(float x){
-        ChiinaScale = x-2.0f;
+        ChiinaScale = x;
     }
 }
